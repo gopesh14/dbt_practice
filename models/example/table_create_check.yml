@@ -1,0 +1,8 @@
+version: 2
+models:
+  - name: table_create_check
+    columns:
+      - name: TABLE_ID
+        tests:
+            - not_null
+            - unique

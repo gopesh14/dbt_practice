@@ -1,0 +1,8 @@
+version: 2
+models:
+  - name: life_tot_face_val
+    columns:
+      - name: TFV_SK
+        tests:
+            - not_null
+            - unique

@@ -1,0 +1,10 @@
+version: 2
+sources:
+  - name: entreference_common
+    database: |
+        {%- if target.name == "rdev" -%} DENTREFERENCE
+        {%- elif target.name == "dev" -%} DENTREFERENCE
+        {%- endif -%}
+    schema: common
+    tables:
+      - name: life_risk_tfv_dl2
